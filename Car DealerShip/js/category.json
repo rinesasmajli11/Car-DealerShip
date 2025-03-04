@@ -1,0 +1,96 @@
+{
+    "categories": {
+      "Audi": [
+        {
+          "model": "Audi A4",
+          "price": 35000,
+          "image": "img/car.png",
+          "rating": 4.7,
+          "horsepower": 201,
+          "fuelType": "Petrol",
+          "transmission": "Automatic"
+        },
+        {
+          "model": "Audi Q7",
+          "price": 55000,
+          "image": "img/audi_q7-removebg-preview.png",
+          "rating": 4.8,
+          "horsepower": 335,
+          "fuelType": "Diesel",
+          "transmission": "Automatic"
+        }
+      ],
+      "Ferrari": [
+        {
+          "model": "Ferrari 488 GTB",
+          "price": 280000,
+          "image": "img/ferrarii-removebg-preview.png",
+          "rating": 5.0,
+          "horsepower": 661,
+          "fuelType": "Petrol",
+          "transmission": "Automatic"
+        }
+      ],
+      "Toyota": [
+        {
+          "model": "Toyota Corolla",
+          "price": 22000,
+          "image": "img/corolla_toy-removebg-preview.png",
+          "rating": 4.5,
+          "horsepower": 169,
+          "fuelType": "Hybrid",
+          "transmission": "Automatic"
+        },
+        {
+          "model": "Toyota RAV4",
+          "price": 27000,
+          "image": "img/rav_toyota-removebg-preview.png",
+          "rating": 4.6,
+          "horsepower": 203,
+          "fuelType": "Petrol",
+          "transmission": "Automatic"
+        }
+      ],
+      "Honda": [
+        {
+          "model": "Honda Civic",
+          "price": 25000,
+          "image": "img/honda_civic-removebg-preview.png",
+          "rating": 4.6,
+          "horsepower": 180,
+          "fuelType": "Petrol",
+          "transmission": "Automatic"
+        },
+        {
+          "model": "Honda CR-V",
+          "price": 32000,
+          "image": "img/honda_cr-removebg-preview.png",
+          "rating": 4.7,
+          "horsepower": 190,
+          "fuelType": "Hybrid",
+          "transmission": "Automatic"
+        }
+      ],
+      "Tesla": [
+        {
+          "model": "Tesla Model 3",
+          "price": 45000,
+          "image": "img/teslla_car-removebg-preview.png",
+          "rating": 4.9,
+          "horsepower": 283,
+          "fuelType": "Electric",
+          "transmission": "Automatic"
+        },
+        {
+          "model": "Tesla Model X",
+          "price": 90000,
+          "image": "img/Tesla-Model-X-removebg-preview.png",
+          "rating": 5.0,
+          "horsepower": 670,
+          "fuelType": "Electric",
+          "transmission": "Automatic"
+        }
+      ]
+    }
+  }
+  

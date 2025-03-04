@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car Dealership - Home</title>
+    <link rel="stylesheet" href="css/cars.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Irish+Grover&family=Poppins:ital,
+     wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,
+     800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Link për Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- Navbar-->
+    <nav class="navbar">
+      <ul class="navbar-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html">Brands</a></li>
+        <li><a href="index.html">Explore</a></li>
+      </ul>
+      <div class="navbar-logo">
+        <img src="img/logo.png" alt="car logo" />
+        <span>
+          <span class="car">Car</span>
+          <span class="dealership">Dealership</span>
+        </span>
+      </div>
+      <ul class="navbar-links">
+        <li><a href="#About">About us</a></li>
+        <li><a href="#Video">Video</a></li>
+        <li><a href="#Contact">Contact us</a></li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <div class="row">
+        <!-- Filters Section-->
+        <section class="filters">
+          <h2 class="filter">Filters</h2>
+          <label for="mark" class="mark">Mark:</label>
+          <select id="mark">
+            <option value="All">All</option>
+          </select>
+          <div class="price-range">
+            <label for="min-price">Price Range:</label>
+            <input type="number" id="min-price" placeholder="Min" />
+            <input type="number" id="max-price" placeholder="Max" />
+          </div>
+        </section>
+
+        <!-- Cars Section-->
+        <section class="cars">
+          <h2>Cars</h2>
+          <div class="car-list"></div>
+          <!-- Makinat do të shtohen dinamike -->
+        </section>
+      </div>
+
+      <div class="row">
+        <!-- Cart Section-->
+        <section class="cart">
+          <h2>Cart</h2>
+          <div class="cart-items"></div>
+          <!-- Artikujt e karrocës do të shtohen dinamike -->
+          <div class="total">
+            <span>Total:</span>
+            <span id="total-price">$0</span>
+          </div>
+
+          <div class="buttons">
+            <button id="buy-now-button" class="button">Buy it now!</button>
+            <button id="cancel-button" class="button">Cancel</button>
+          </div>
+        </section>
+
+        <!-- Add Car Section-->
+        <section class="add-car">
+          <h2>Add Car</h2>
+          <label for="mark-name">Mark:</label>
+          <input type="text" id="mark-name" placeholder="Mark name..." />
+          <label for="model-name">Model:</label>
+          <input type="text" id="model-name" placeholder="Model name..." />
+          <label for="price">Price:</label>
+          <input type="number" id="price" placeholder="ex. 24000" />
+          <label for="image-url">Image url:</label>
+          <input type="url" id="image-url" placeholder="url here..." />
+          <button class="button">Add Vehicle</button>
+        </section>
+      </div>
+    </div>
+
+    <!-- Payment Modal-->
+    <div class="payment-modal" id="paymentModal">
+      <div class="payment-modal-content">
+        <span class="close-button" onclick="closePaymentModal()">&times;</span>
+        <h2>Payment</h2>
+        <label for="card-number">Card Number:</label>
+        <input type="text" id="card-number" placeholder="1234 5678 9101 1121" />
+        <label for="expiration-date">Expiration Date:</label>
+        <input type="text" id="expiration-date" placeholder="MM/YY" />
+        <label for="cvv">CVV:</label>
+        <input type="text" id="cvv" placeholder="123" />
+        <button class="pay-button">Pay</button>
+        <p>Your personal data will be used to process your order...</p>
+      </div>
+    </div>
+
+    <!-- Success Modal-->
+    <div id="succsess-modal" class="succsess-modal">
+      <div class="modal-content">
+        <h3>Order has been paid successfully</h3>
+        <div class="checkmark">
+          <i class="fa-solid fa-check"></i>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/cars.js"></script>
+    
+  </body>
+</html>
